@@ -27,8 +27,8 @@ To get a local copy up and running follow these simple example steps.
 NPM should be installed
 
 ### ENV variables (`.env.local` file)
-`REACT_APP_FMG_API_KEY`
-> get your API key from [FMG](https://site.financialmodelingprep.com/developer/docs/)
+`REACT_APP_FMP_API_KEY`
+> get your API key from [FMP](https://site.financialmodelingprep.com/developer/docs/)
 
 ### Install
 run `npm install` in the project folder.
