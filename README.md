@@ -26,6 +26,10 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 NPM should be installed
 
+### ENV variables (`.env.local` file)
+`REACT_APP_FMP_API_KEY`
+> get your API key from [FMP](https://site.financialmodelingprep.com/developer/docs/)
+
 ### Install
 run `npm install` in the project folder.
 

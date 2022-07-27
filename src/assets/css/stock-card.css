@@ -1,0 +1,8 @@
+.stock-card {
+  @apply bg-pink-600/75;
+}
+
+.stock-card:nth-child(4n + 1),
+.stock-card:nth-child(4n) {
+  @apply bg-pink-600/25;
+}
