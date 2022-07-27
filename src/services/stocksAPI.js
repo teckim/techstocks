@@ -1,10 +1,10 @@
 import http from '../plugins/http';
 
-export const fetchStocks = () => http.get('/stock-screener', {
+export const fetchStocks = (exchange) => http.get('/stock-screener', {
   params: {
     sector: 'Technology',
-    exchange: 'NASDAQ',
     limit: '10',
+    exchange,
   },
 });
 

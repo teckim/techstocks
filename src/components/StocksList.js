@@ -5,9 +5,7 @@ import StockCard from './StockCard';
 const StocksList = ({ stocks }) => (
   <div className="grid grid-cols-2">
     {
-      stocks
-        .filter((stock) => stock.country === 'US')
-        .map((stock) => <StockCard key={stock.symbol} stock={stock} />)
+      stocks.map((stock) => <StockCard key={stock.symbol} stock={stock} />)
     }
   </div>
 );
