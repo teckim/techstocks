@@ -6,11 +6,11 @@ import '../assets/css/stock-card.css';
 
 const StockCard = ({ stock }) => (
   <NavLink className="stock-card h-52 flex flex-col px-4 py-6 relative" to={`/${stock.symbol}`}>
-    <div className="absolute inset-0 pt-1">
+    <div className="absolute overflow-hidden m-2 inset-0 pt-1">
       <div className="[writing-mode:vertical-lr] font-extrabold subpixel-antialiased tracking-widest text-6xl text-white/25 blur-sm">{stock.symbol}</div>
     </div>
     <div className="text-right mt-auto">
-      <div className="text-xl uppercase break-normal font-bold tracking-wider">{stock.companyName}</div>
+      <div className="max-h-20 text-lg uppercase break-normal font-bold tracking-wider text-ellipsis overflow-hidden">{stock.companyName}</div>
       <div className="tracking-wider">
         {`$ ${stock.price}`}
       </div>
